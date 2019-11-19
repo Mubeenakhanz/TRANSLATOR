@@ -2,4 +2,8 @@
     <string name="app_name">Prototype0</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="button1">language 1</string>
+    <string name="button2">language 2</string>
+    <string name="repeat_button"></string>
+
 </resources>
