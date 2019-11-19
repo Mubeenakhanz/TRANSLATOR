@@ -31,6 +31,7 @@
             android:backgroundTint="#E20505"
             android:text="@string/button2"
             android:textColor="#FFFFFF"
+            android:rotation = "180"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
