@@ -1,5 +1,6 @@
 package com.cs515.prototype0;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -21,6 +22,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button secondPage = (Button) findViewById(R.id.secondPageBtn);
+        secondPage.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent startIntent = new Intent(getApplicationContext(), Main2Activity.class);
+                startActivity(startIntent);
+            }
+        });
+
 
         Button myLanguage_button = findViewById(R.id.button);
         Button foreignLanguage_button = findViewById(R.id.button2);
