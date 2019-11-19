@@ -18,6 +18,7 @@
         android:layout_height="match_parent"
         android:background="#0D474141"
         android:backgroundTint="#166F6C6C"
+        android:visibility="visible"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <Button
@@ -76,6 +77,81 @@
             tools:layout_conversion_absoluteWidth="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#79A3C9CE"
+        android:backgroundTint="#79A3C9CE"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#548F8A"
+            android:backgroundTint="#548F8A"
+            android:text="@string/select_language"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textDirection="anyRtl"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioSpanish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_spanish" />
+
+        <RadioButton
+            android:id="@+id/radioEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_english" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#79A3C9CE"
+        android:backgroundTint="#79A3C9CE"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#548F8A"
+            android:backgroundTint="#548F8A"
+            android:text="@string/select_language"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textDirection="anyRtl"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioSpanish1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_spanish" />
+
+        <RadioButton
+            android:id="@+id/radioEnglish1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_english" />
+    </RadioGroup>
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
