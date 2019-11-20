@@ -12,43 +12,23 @@
         android:layout_height="wrap_content"
         theme="@style/AppTheme.AppBarOverlay"/>
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#0D474141"
-        android:backgroundTint="#166F6C6C"
+        android:background="#EFEBE9"
+        android:backgroundTint="#EFEBE9"
         android:visibility="visible"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <Button
-            android:id="@+id/button2"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#E20505"
-            android:text="@string/button2"
-            android:textColor="#FFFFFF"
-            android:rotation = "180"
-            app:layout_constraintBottom_toTopOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.029"
-            tools:layout_conversion_absoluteHeight="0dp"
-            tools:layout_conversion_absoluteWidth="0dp" />
-
-        <Button
             android:id="@+id/button"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginBottom="100dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:background="@drawable/circle"
-            android:backgroundTint="#E20505"
+            android:backgroundTint="#B71C1C"
             android:text="@string/button1"
             android:textColor="#ffffff"
             android:textColorHint="#00F7F6F6"
@@ -56,37 +36,131 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/secondPageBtn"
+            app:layout_constraintVertical_bias="0.445"
             tools:layout_conversion_absoluteHeight="0dp"
             tools:layout_conversion_absoluteWidth="0dp" />
 
         <Button
             android:id="@+id/button6"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="62dp"
-            android:layout_height="65dp"
-            android:layout_marginBottom="100dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="28dp"
             android:background="@android:drawable/ic_menu_revert"
             android:backgroundTint="#B4C27272"
             android:text="@string/repeat_button"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintHorizontal_bias="0.161"
             app:layout_constraintStart_toEndOf="@+id/button"
             tools:layout_conversion_absoluteHeight="0dp"
             tools:layout_conversion_absoluteWidth="0dp" />
 
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#B71C1C"
+            android:backgroundTint="#B71C1C"
+            app:layout_constraintBottom_toTopOf="@+id/secondPageBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#EFEBE9"
+            android:rotation="180"
+            android:text="@string/button2"
+            android:textColor="#6D4C41"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.651"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp" />
+
+        <TextView
+            android:id="@+id/simpleTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FAFAFA"
+            android:backgroundTint="#FAFAFA"
+            android:text="@string/textView_lang1"
+            android:textAlignment="inherit"
+            android:textColor="#6D4C41"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/simpleTextView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="39dp"
+            android:background="#FAFAFA"
+            android:backgroundTint="#FAFAFA"
+            android:rotation="180"
+            android:text="@string/textView_lang2"
+            android:textAlignment="inherit"
+            android:textColor="#6D4C41"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="1.0" />
+
         <Button
             android:id="@+id/secondPageBtn"
-            android:layout_width="103dp"
-            android:layout_height="59dp"
-            android:layout_marginTop="324dp"
-            android:layout_marginEnd="28dp"
-            android:onClick="onClick"
-            android:text="@string/secondPageBtn"
+
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:background="#BCAAA4"
+            android:backgroundTint="#BCAAA4"
+            android:text="@string/second_page"
+            android:textColor="#6D4C41"
+            app:layout_constraintBottom_toBottomOf="parent"
+
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.459" />
+
+        <!--        <ListView-->
+        <!--            android:id="@+id/simpleListView"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:divider="#ffffff"-->
+        <!--            android:dividerHeight="1dp"-->
+        <!--            android:footerDividersEnabled="false"-->
+        <!--            app:layout_constraintBottom_toTopOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -94,8 +168,8 @@
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#79A3C9CE"
-        android:backgroundTint="#79A3C9CE"
+        android:background="#EFEBE9"
+        android:backgroundTint="#EFEBE9"
         android:visibility="invisible"
         app:layout_anchor="@+id/view_pager"
         app:layout_anchorGravity="center">
@@ -104,35 +178,42 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#548F8A"
-            android:backgroundTint="#548F8A"
+            android:background="#B71C1C"
+            android:backgroundTint="#B71C1C"
             android:text="@string/select_language"
             android:textAlignment="textStart"
             android:textAllCaps="true"
             android:textColor="#ffffff"
             android:textDirection="anyRtl"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioSpanish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/radio_spanish" />
+            android:text="@string/radio_spanish"
+            android:textColorLink="#B71C1C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioEnglish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="@string/radio_english" />
+            android:text="@string/radio_english"
+            android:textColorLink="#B71C1C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#79A3C9CE"
-        android:backgroundTint="#79A3C9CE"
+        android:background="#EFEBE9"
+        android:backgroundTint="#EFEBE9"
         android:visibility="invisible"
         app:layout_anchor="@+id/view_pager"
         app:layout_anchorGravity="center">
@@ -141,29 +222,35 @@
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#548F8A"
-            android:backgroundTint="#548F8A"
+            android:background="#B71C1C"
+            android:backgroundTint="#B71C1C"
             android:text="@string/select_language"
             android:textAlignment="textStart"
             android:textAllCaps="true"
             android:textColor="#ffffff"
             android:textDirection="anyRtl"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioSpanish1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/radio_spanish" />
+            android:text="@string/radio_spanish"
+            android:textColorLink="#B71C1C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioEnglish1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="@string/radio_english" />
+            android:text="@string/radio_english"
+            android:textColorLink="#B71C1C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </RadioGroup>
-
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
