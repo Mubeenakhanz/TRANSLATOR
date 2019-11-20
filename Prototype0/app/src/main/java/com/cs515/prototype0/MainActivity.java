@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onClick(View v){
-                Intent startIntent = new Intent(getApplicationContext(), Main2Activity.class);
-                startActivity(startIntent);
+                Intent startIntentpage2 = new Intent(getApplicationContext(), Main2Activity.class);
+                startActivity(startIntentpage2);
             }
         });
 

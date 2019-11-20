@@ -14,22 +14,7 @@ import android.widget.Button;
 public class HealthPage extends AppCompatActivity {
 
     private SoundPool soundPool;
-    private int sound1;
-
-    public void playSound(View v) {
-        switch (v.getId()) {
-            case R.id.sound1Btn:
-                soundPool.play(sound1, 1, 1, 0, 0, 1);
-                break;
-        }
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        soundPool.release();
-        soundPool = null;
-    } //end SoundPool Code
+    private int healthSound1, healthSound2, healthSound3, healthSound4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +22,8 @@ public class HealthPage extends AppCompatActivity {
         setContentView(R.layout.activity_health_page);
 
         // Go Back Button Code
-        Button goBackBtn = (Button) findViewById(R.id.goBackBtn);
-        goBackBtn.setOnClickListener(new View.OnClickListener() {
+        Button goBackBtn2 = (Button) findViewById(R.id.goBackBtn2);
+        goBackBtn2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v){
@@ -54,7 +39,34 @@ public class HealthPage extends AppCompatActivity {
         } else {
             soundPool = new SoundPool(6, AudioManager.STREAM_MUSIC, 0);
         }
-        sound1 = soundPool.load(this, R.raw.pacman_death, 1);
+        healthSound1 = soundPool.load(this, R.raw.donde_el_hospital, 1);
+        healthSound2 = soundPool.load(this, R.raw.pacman_death, 1); // change here later
+        healthSound3 = soundPool.load(this, R.raw.pacman_death, 1);
+        healthSound4 = soundPool.load(this, R.raw.pacman_death, 1);
     }
+
+    public void playSound(View v) {
+        switch (v.getId()) {
+            case R.id.HealthBtn1:
+                soundPool.play(healthSound1, 1, 1, 0, 0, 1);
+                break;
+            case R.id.HealthBtn2:
+                soundPool.play(healthSound2, 1, 1, 0, 0, 1);
+                break;
+            case R.id.HealthBtn3:
+                soundPool.play(healthSound3, 1, 1, 0, 0, 1);
+                break;
+            case R.id.HealthBtn4:
+                soundPool.play(healthSound4, 1, 1, 0, 0, 1);
+                break;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        soundPool.release();
+        soundPool = null;
+    } //end SoundPool Code
 
 } // end public class
