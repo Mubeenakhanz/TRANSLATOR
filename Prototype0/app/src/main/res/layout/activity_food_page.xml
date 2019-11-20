@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#347B98"
     tools:context=".FoodPage">
 
     <Button
@@ -13,6 +14,7 @@
         android:layout_marginTop="12dp"
         android:onClick="playSound"
         android:text="It Really hurts"
+        android:background="#F0F7D4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +27,7 @@
         android:layout_marginTop="12dp"
         android:onClick="playSound"
         android:text="We Had An ACCident"
+        android:background="#F0F7D4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +40,7 @@
         android:layout_marginTop="12dp"
         android:onClick="playSound"
         android:text="we need a doctor"
+        android:background="#F0F7D4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="276dp"
+        android:background="#66B032"
         android:text="@string/secondPageBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -69,6 +74,7 @@
         android:layout_marginTop="80dp"
         android:onClick="playSound"
         android:text="Where is the nearest hospital?"
+        android:background="#F0F7D4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
