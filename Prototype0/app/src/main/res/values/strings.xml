@@ -7,9 +7,11 @@
     <string name="repeat_button"></string>
     <string name="radio_english">English</string>
     <string name="radio_spanish">Spanish</string>
+
     <string name="second_page">My Daily Life</string>
     <string name="textView_lang1">My language text</string>
     <string name="textView_lang2">Foreign language text</string>
     <string name="select_language">Select Language</string>
+
 
 </resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#347B98"
+    tools:context=".HealthPage">
+
+    <Button
+        android:id="@+id/HealthBtn4"
+        android:layout_width="407dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="12dp"
+        android:onClick="playSound"
+        android:text="It Really hurts"
+        android:background="#F0F7D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HealthBtn3" />
+
+    <Button
+        android:id="@+id/HealthBtn3"
+        android:layout_width="407dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="12dp"
+        android:onClick="playSound"
+        android:text="We Had An ACCident"
+        android:background="#F0F7D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HealthBtn2" />
+
+    <Button
+        android:id="@+id/HealthBtn2"
+        android:layout_width="407dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="12dp"
+        android:onClick="playSound"
+        android:text="we need a doctor"
+        android:background="#F0F7D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HealthBtn1" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="80dp"
+        android:background="#9C27B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goBackBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="276dp"
+        android:background="#66B032"
+        android:text="@string/secondPageBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/HealthBtn1"
+        android:layout_width="407dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="80dp"
+        android:onClick="playSound"
+        android:text="Where is the nearest hospital?"
+        android:background="#F0F7D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

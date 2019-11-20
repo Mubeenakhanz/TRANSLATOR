@@ -135,6 +135,7 @@
 
         <Button
             android:id="@+id/secondPageBtn"
+
             android:layout_width="131dp"
             android:layout_height="50dp"
             android:background="#BCAAA4"
@@ -142,6 +143,7 @@
             android:text="@string/second_page"
             android:textColor="#6D4C41"
             app:layout_constraintBottom_toBottomOf="parent"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
