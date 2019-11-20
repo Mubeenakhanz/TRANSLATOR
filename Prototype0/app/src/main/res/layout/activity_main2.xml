@@ -7,12 +7,59 @@
     tools:context=".Main2Activity">
 
     <Button
-        android:id="@+id/goBackBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="40dp"
-        android:text="Go Back"
+    android:id="@+id/goBackBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="260dp"
+    android:text="@string/secondPageBtn"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/healthBtn"
+        android:layout_width="198dp"
+        android:layout_height="274dp"
+        android:background="@drawable/healthpng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/restroomBtn"
+        android:layout_width="210dp"
+        android:layout_height="271dp"
+        android:background="@drawable/restroompng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/busBtn"
+        android:layout_width="210dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/ic_action_bus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/foodBtn"
+        android:layout_width="199dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/ic_action_restaurant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="80dp"
+        android:background="#9C27B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    android:onClick="playSound"
 </androidx.constraintlayout.widget.ConstraintLayout>
