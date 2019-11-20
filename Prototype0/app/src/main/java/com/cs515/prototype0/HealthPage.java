@@ -40,7 +40,7 @@ public class HealthPage extends AppCompatActivity {
             soundPool = new SoundPool(6, AudioManager.STREAM_MUSIC, 0);
         }
         healthSound1 = soundPool.load(this, R.raw.donde_el_hospital, 1);
-        healthSound2 = soundPool.load(this, R.raw.weneeddoctor, 1); // change here later
+        healthSound2 = soundPool.load(this, R.raw.weneeddoctor, 1);
         healthSound3 = soundPool.load(this, R.raw.wehadaccident, 1);
         healthSound4 = soundPool.load(this, R.raw.ithurts, 1);
     }
