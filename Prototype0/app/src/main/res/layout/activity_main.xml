@@ -79,11 +79,11 @@
 
         <Button
             android:id="@+id/secondPageBtn"
-            android:layout_width="103dp"
-            android:layout_height="59dp"
-            android:layout_marginTop="324dp"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
             android:layout_marginEnd="28dp"
             android:text="secondPage"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
