@@ -16,60 +16,62 @@
         android:text="@string/secondPageBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-git
+    git
+
+
+    android:onClick="onClick"
+
     <Button
         android:id="@+id/healthBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="97dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="32dp"
         android:background="@drawable/healthpng"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/restroomBtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodBtn" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
 
     <Button
         android:id="@+id/restroomBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
         android:background="@drawable/restroompng"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/healthBtn"
-        app:layout_constraintTop_toBottomOf="@+id/busBtn" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139"
+        tools:layout_editor_absoluteX="28dp" />
 
     <Button
         android:id="@+id/busBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="101dp"
+        android:layout_height="121dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/ic_action_bus"
-        app:layout_constraintBottom_toTopOf="@+id/restroomBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/foodBtn"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515"
+        tools:layout_editor_absoluteX="28dp" />
 
     <Button
         android:id="@+id/foodBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="94dp"
+        android:layout_height="119dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/ic_action_restaurant"
-        app:layout_constraintBottom_toTopOf="@+id/healthBtn"
-        app:layout_constraintEnd_toStartOf="@+id/busBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783"
+        tools:layout_editor_absoluteX="32dp" />
+
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
         android:layout_marginTop="80dp"
         android:background="#9C27B0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933"
+        tools:layout_editor_absoluteX="-164dp" />" />
 </androidx.constraintlayout.widget.ConstraintLayout>
