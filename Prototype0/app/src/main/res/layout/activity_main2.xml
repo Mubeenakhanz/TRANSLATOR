@@ -6,70 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
 
+
     <Button
         android:id="@+id/goBackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="260dp"
+        android:layout_marginEnd="296dp"
         android:background="@android:drawable/ic_media_rew"
         android:text="@string/secondPageBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
 
     <Button
         android:id="@+id/healthBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="88dp"
+        android:layout_height="119dp"
         android:background="@drawable/healthpng"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/restroomBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodBtn" />
-
+        app:Layout_constraintBottom_toBottom="@id/foodBtn"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="116dp" />
 
     <Button
         android:id="@+id/restroomBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
+        android:layout_width="89dp"
+        android:layout_height="95dp"
         android:background="@drawable/restroompng"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/healthBtn"
-        app:layout_constraintTop_toBottomOf="@+id/busBtn" />
-
+        app:Layout_constraintBottom_toBottom="@id/button3"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="525dp" />
 
     <Button
         android:id="@+id/busBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="91dp"
+        android:layout_height="106dp"
         android:background="@drawable/ic_action_bus"
-        app:layout_constraintBottom_toTopOf="@+id/restroomBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/foodBtn"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:Layout_constraintBottom_toBottom="@id/restroomBtn"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="393dp" />
 
     <Button
         android:id="@+id/foodBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="88dp"
+        android:layout_height="115dp"
         android:background="@drawable/ic_action_restaurant"
-        app:layout_constraintBottom_toTopOf="@+id/healthBtn"
-        app:layout_constraintEnd_toStartOf="@+id/busBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-        android:onClick="onClick"
+        app:Layout_constraintBottom_toBottom="@id/busBtn"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="262dp" />
+
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="96dp"
         android:background="#9C27B0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="more"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="646dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
